@@ -22,8 +22,10 @@ artist's name if they are editing through nested routing. Name the
 helper method `artist_select`. **Hint:** You'll need to set a variable
 in the controller action to pass to the helper method as an argument
 along with a `song` instance.
+
 4. Validate that new songs created for an artist via nested routing are
    created for valid artists, and redirect to `/artists` if not.
+
 5. Validate that songs being edited via nested routing have a valid artist. Redirect to `/artists` if not.
 6. Validate that songs being edited via nested routing are in the
    artist's `songs` collection. Redirect to `/artists/:artist_id/songs` if not.
