@@ -1,9 +1,15 @@
 <%= form_for @song  do |f| %>
   <%= f.label :title %>
-  <%= f.text_field :title %><br>
+  <%= f.text_field :title %>
+  <br>
+  
+  <% if false %>
   <%= f.label :artist_name %>
   <%= f.text_field :artist_name %>
-  <br />
+  <% end %>
+
+  <%= artist_id_field @song %>
+  <br>
 
   <%= f.submit %>
 <% end %>
